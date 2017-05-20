@@ -1,13 +1,25 @@
+
+body {
+  display: block;
+}
+
+div {
+  border: 1px solid black;
+}
+
+/* Logo Header */
+
 header {
   display: flex;
   align-items: center;
-  position: fixed;
   border-bottom: 1px solid black;
   height: 80px;
   width: 100%;
+  position: fixed;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  z-index: 1;
 }
 
 .logo {
@@ -37,5 +49,33 @@ header nav {
 nav span {
   display: inline-block;
   padding: 20px 10px;
+}
 
+/* Main Content*/
+
+.content {
+  display: flex;
+  padding-top: 116px;
+  width: 1232px;
+  margin: 0 auto 78px auto;
+}
+
+.column {
+  margin-right: 32px
+}
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+
+.bite-img {
+  width: 240px;
 }
